@@ -1,6 +1,6 @@
 {
   "name": "@ideematic/redux-offline",
-  "version": "2.6.1",
+  "version": "2.6.2",
   "description": "Redux Offline-First Architecture",
   "main": "lib/index.js",
   "types": "./typings.d.ts",

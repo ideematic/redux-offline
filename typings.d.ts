@@ -1,11 +1,11 @@
-declare module '@ideematic/redux-offline"/lib/defaults' {
-  import { Config } from '@ideematic/redux-offline"/lib/types';
+declare module '@ideematic/redux-offline/lib/defaults' {
+  import { Config } from '@ideematic/redux-offline/lib/types';
 
   const config: Config;
   export default config;
 }
 
-declare module '@ideematic/redux-offline"/lib/types' {
+declare module '@ideematic/redux-offline/lib/types' {
   export interface ResultAction {
     meta: {
       completed: boolean;
@@ -113,7 +113,7 @@ declare module '@ideematic/redux-offline"/lib/types' {
   }
 }
 
-declare module '@ideematic/redux-offline"/lib/constants' {
+declare module '@ideematic/redux-offline/lib/constants' {
   export const DEFAULT_ROLLBACK: string;
   export const DEFAULT_COMMIT: string;
   export const JS_ERROR: string;
@@ -126,10 +126,10 @@ declare module '@ideematic/redux-offline"/lib/constants' {
   export const OFFLINE_STATUS_CHANGED: string;
 }
 
-declare module '@ideematic/redux-offline"' {
+declare module '@ideematic/redux-offline' {
   import { createStore as createReduxStore, Store, StoreEnhancer, Dispatch, Middleware } from 'redux';
 
-  import { Config } from '@ideematic/redux-offline"/lib/types';
+  import { Config } from '@ideematic/redux-offline/lib/types';
 
   export const offline: (userConfig: Partial<Config>) => (createStore: typeof createReduxStore) =>
     <T extends { [key: string]: any }>(
