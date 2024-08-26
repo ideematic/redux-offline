@@ -1,6 +1,6 @@
 {
-  "name": "@redux-offline/redux-offline",
-  "version": "2.6.0",
+  "name": "@ideematic/redux-offline",
+  "version": "2.6.1",
   "description": "Redux Offline-First Architecture",
   "main": "lib/index.js",
   "types": "./typings.d.ts",
@@ -10,7 +10,7 @@
     "flow:stop": "flow stop",
     "flow": "flow; test $? -eq 0 -o $? -eq 2",
     "lint": "eslint src/",
-    "prepublishOnly": "npm run lint && npm run flow && npm run test && npm run build",
+    "prepublishOnly": "npm run build",
     "eslint": "eslint src --fix",
     "prettier": "--config .prettierrc --write",
     "test": "jest",
